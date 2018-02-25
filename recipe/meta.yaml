@@ -32,7 +32,7 @@ requirements:
 
 test:
   imports:
-    - spyder_notebook
+    - notebook
 
 about:
   home: https://github.com/spyder-ide/spyder-notebook
