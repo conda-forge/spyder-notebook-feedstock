@@ -32,7 +32,8 @@ requirements:
 
 test:
   imports:
-    - notebook
+    # Linux is giving a segfault probably due to the lack of an X server
+    - spyder_notebook  # [win or osx]
 
 about:
   home: https://github.com/spyder-ide/spyder-notebook
