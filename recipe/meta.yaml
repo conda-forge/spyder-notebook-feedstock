@@ -1,7 +1,7 @@
 {% set name = "spyder-notebook" %}
-{% set version = "0.1.2" %}
+{% set version = "0.1.3" %}
 {% set hash_type = "sha256" %}
-{% set hash = "3fe22f1de87c887fb275316104d71891bf5d9d766ca7e23cb30c069a34da7410" %}
+{% set hash = "b6bf65c2efc090af4c7a69cc994500770e8d73d77114424de2ed88fa5419fa38" %}
 
 package:
   name: {{ name|lower }}
