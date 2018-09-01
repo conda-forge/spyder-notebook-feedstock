@@ -33,7 +33,8 @@ requirements:
 test:
   imports:
     # Linux is giving a segfault probably due to the lack of an X server
-    - spyder_notebook  # [win or osx]
+    # OS X fails to due some issue with Qt unrelated to this recipe
+    - spyder_notebook  # [win]
 
 about:
   home: https://github.com/spyder-ide/spyder-notebook
