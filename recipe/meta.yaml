@@ -1,7 +1,7 @@
 {% set name = "spyder-notebook" %}
-{% set version = "0.1.3" %}
+{% set version = "0.1.4" %}
 {% set hash_type = "sha256" %}
-{% set hash = "b6bf65c2efc090af4c7a69cc994500770e8d73d77114424de2ed88fa5419fa38" %}
+{% set hash = "0cc18320452dfb38092bf04cda48ef53270a516e83af9667852d9a5f3ef0c60d" %}
 
 package:
   name: {{ name|lower }}
@@ -14,7 +14,7 @@ source:
 
 build:
   noarch: python
-  number: 1
+  number: 0
   script: python setup.py install --single-version-externally-managed --record=record.txt
 
 requirements:
