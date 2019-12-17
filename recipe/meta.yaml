@@ -24,7 +24,7 @@ requirements:
 
   run:
     - python
-    - spyder >=4, <5
+    - spyder >=4,<5
     - notebook >=4.3
     - qtpy
     - requests
