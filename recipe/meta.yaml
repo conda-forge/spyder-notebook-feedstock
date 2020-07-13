@@ -1,5 +1,5 @@
 {% set name = "spyder-notebook" %}
-{% set version = "0.2.3" %}
+{% set version = "0.3.0a0" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +8,7 @@ package:
 source:
   fn: {{ name }}-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: a6fd8719032f83412ac0837a7045386a97327dd6c99beb6c3479f30ee8115751
+  sha256: 51183f5602e7ae6a677dbf9a66e8af6cae53fac32063509f55ff3737347f5da0
 
 build:
   noarch: python
@@ -21,13 +21,16 @@ requirements:
     - pip
 
   run:
-    - python
-    - spyder >=4,<5
+    - python >=3.5
+    - spyder >=4.1,<5
+    - jinja2
+    - jupyter_core
+    - nbformat
     - notebook >=4.3
     - qtpy
+    - qdarkstyle
     - requests
-    - psutil
-    - nbformat
+    - traitlets
 
 test:
   imports:
