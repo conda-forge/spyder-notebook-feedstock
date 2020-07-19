@@ -5,7 +5,7 @@ Home: https://github.com/spyder-ide/spyder-notebook
 
 Package license: MIT
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
 Summary: Jupyter notebook integration with Spyder
 
