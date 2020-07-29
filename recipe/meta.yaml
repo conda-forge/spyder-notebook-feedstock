@@ -1,5 +1,5 @@
 {% set name = "spyder-notebook" %}
-{% set version = "0.2.3" %}
+{% set version = "0.3.0" %}
 
 package:
   name: {{ name|lower }}
@@ -8,12 +8,12 @@ package:
 source:
   fn: {{ name }}-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: a6fd8719032f83412ac0837a7045386a97327dd6c99beb6c3479f30ee8115751
+  sha256: 770022db877709eeed7a9e544fe86bf47f528ade7eb80ba22ea5b4beb087f469
 
 build:
   noarch: python
   number: 0
-  script: "{{ PYTHON }} -m pip install . --no-deps -vv"
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   build:
@@ -40,7 +40,7 @@ about:
   license: MIT
   license_family: MIT
   license_file: LICENSE
-  summary: 'Jupyter notebook integration with Spyder'
+  summary: Jupyter notebook integration with Spyder
   description: |
     Currently it supports basic functionality such as creating new notebooks, 
     opening any notebook in your filesystem and saving notebooks at any location.
