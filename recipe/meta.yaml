@@ -21,13 +21,16 @@ requirements:
     - pip
 
   run:
-    - python
-    - spyder >=4,<5
+    - python >=3.5
+    - spyder >=4.1,<5
+    - jinja2
+    - jupyter_core
+    - nbformat
     - notebook >=4.3
+    - qdarkstyle
     - qtpy
     - requests
-    - psutil
-    - nbformat
+    - traitlets
 
 test:
   imports:
