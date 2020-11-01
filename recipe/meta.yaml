@@ -1,5 +1,5 @@
 {% set name = "spyder-notebook" %}
-{% set version = "0.3.0" %}
+{% set version = "0.3.1" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +8,7 @@ package:
 source:
   fn: {{ name }}-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 770022db877709eeed7a9e544fe86bf47f528ade7eb80ba22ea5b4beb087f469
+  sha256: 444c269b89077f625b311e220e86fd77675e147c2943f45a1f5769a6d5fc65a0
 
 build:
   noarch: python
