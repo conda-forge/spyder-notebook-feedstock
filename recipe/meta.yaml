@@ -1,5 +1,5 @@
 {% set name = "spyder-notebook" %}
-{% set version = "0.3.2" %}
+{% set version = "0.4.0" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +8,7 @@ package:
 source:
   fn: {{ name }}-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 67a225af0194864fff195144634eaa5afc550c5dba0b94a270dfc89d4c54f474
+  sha256: 5fde69f41dbb71232d8eac60e9169d31ae6360d8b02de3a7f30a6af86aaeff68
 
 build:
   noarch: python
@@ -21,8 +21,8 @@ requirements:
     - pip
 
   run:
-    - python >=3.5
-    - spyder >=4.1,<5
+    - python >=3.7
+    - spyder >=5.3.3,<6
     - jinja2
     - jupyter_core
     - nbformat
@@ -33,6 +33,10 @@ requirements:
     - traitlets
 
 test:
+  requires:
+    - pip
+  commands:
+    - python -m pip check  # [linux or win]
   imports:
     # Linux is giving a segfault probably due to the lack of an X server
     # OS X fails to due some issue with Qt unrelated to this recipe
