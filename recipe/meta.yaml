@@ -22,7 +22,7 @@ requirements:
 
   run:
     - python >=3.7
-    - spyder >=5.3.3,<6
+    - spyder >=5.4.3,<6
     - jinja2
     - jupyter_core
     - nbformat
