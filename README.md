@@ -1,11 +1,11 @@
-About spyder-notebook
-=====================
+About spyder-notebook-feedstock
+===============================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/spyder-notebook-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/spyder-ide/spyder-notebook
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/spyder-notebook-feedstock/blob/main/LICENSE.txt)
 
 Summary: Jupyter notebook integration with Spyder
 
