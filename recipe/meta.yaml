@@ -23,13 +23,14 @@ requirements:
   run:
     - python >=3.7
     - spyder >=5.4.3,<6
-    - jinja2
     - jupyter_core
+    - jupyter_server
     - nbformat
-    - notebook >=4.3
+    - notebook >=7,<8
     - qdarkstyle
     - qtpy
     - requests
+    - tornado
     - traitlets
 
 test:
