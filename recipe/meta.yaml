@@ -27,7 +27,8 @@ requirements:
     - jupyter_core
     - jupyter_server
     - nbformat
-    - notebook >=7.2,<8
+    - notebook >=7.3.3,<7.4
+    - psutil
     - qdarkstyle
     - qtpy
     - requests
