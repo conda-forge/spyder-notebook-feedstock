@@ -1,5 +1,5 @@
 {% set name = "spyder-notebook" %}
-{% set version = "0.6.2" %}
+{% set version = "0.7.0" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +8,7 @@ package:
 source:
   fn: {{ name }}-{{ version }}.tar.gz
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: c9a5ceb96077cc87f820df55fd03cab7ad31ab691387a0ca76f0e117d7cd04cc
+  sha256: 01c018a63576d0c255eea3b927e1bfa7cbf017a7d6e585957ac4794bcc3c0e6c
 
 build:
   noarch: python
@@ -23,11 +23,11 @@ requirements:
 
   run:
     - python >={{ python_min }}
-    - spyder >=6,<7
+    - spyder >=6.1,<6.2
     - jupyter_core
     - jupyter_server
     - nbformat
-    - notebook >=7.3.3,<7.4
+    - notebook >=7.4.7,<7.5
     - psutil
     - qdarkstyle
     - qtpy
